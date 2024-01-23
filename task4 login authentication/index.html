@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Login Authentication System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <img src="data:image/jpeg;base64,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" alt="background-image">
+    
+    <!-- Login Form -->
+    <div class="form" id="login-form">
+        <h1 class="form-title">Login</h1>
+        <div class="form-content">
+            <div class="form-box">
+                <i class="ri-user-3-line form-icon"></i>
+                <div class="form-box-input">
+                    <input type="email" class="form-input" id="login-email" required placeholder=" ">
+                    <label for="login-email" class="form-label">Email</label>
+                </div>
+            </div>
+            <div class="form-box">
+                <i class="ri-lock-2-line form-icon"></i>
+                <div class="form-box-input">
+                    <input type="password" class="form-input" id="login-pass" required placeholder=" ">
+                    <label for="login-pass" class="form-label">Password</label>
+                    <i class="ri-eye-off-line form-eye" id="login-eye"></i>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <div class="form-check-group">
+                <input type="checkbox" class="form-check-input" class="form-check">
+                <label for="login-check" class="form-check-label">Remember Me</label>
+            </div>
+            <a href="#" class="form-forget">Forget Password?</a>
+        </div>
+        <button type="submit" class="form-button" id="login-button" onclick="handleLogin()">Login</button>
+        <p class="form-toggle">
+            Don't have an account? <a href="#" id="register-toggle">Register</a>
+        </p>
+    </div>
+
+    <!-- Registration Form -->
+    <div class="form register-form" id="register-form">
+        <h1 class="form-title">Register</h1>
+        <div class="form-content">
+            <div class="form-box">
+                <i class="ri-user-3-line form-icon"></i>
+                <div class="form-box-input">
+                    <input type="text" class="form-input" id="register-username" required placeholder=" ">
+                    <label for="register-username" class="form-label">Username</label>
+                </div>
+            </div>
+            <div class="form-box">
+                <i class="ri-mail-line form-icon"></i>
+                <div class="form-box-input">
+                    <input type="email" class="form-input" id="register-email" required placeholder=" ">
+                    <label for="register-email" class="form-label">Email</label>
+                </div>
+            </div>
+            <div class="form-box">
+                <i class="ri-lock-2-line form-icon"></i>
+                <div class="form-box-input">
+                    <input type="password" class="form-input" id="register-pass" required placeholder=" ">
+                    <label for="register-pass" class="form-label">Password</label>
+                    <i class="ri-eye-off-line form-eye" id="register-eye"></i>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="form-button" id="register-button" onclick="handleRegistration()">Register</button>
+        <p class="form-toggle">
+            Already have an account? <a href="#" id="login-toggle">Login</a>
+        </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
